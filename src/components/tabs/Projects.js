@@ -54,7 +54,9 @@ export default function Projects() {
     }
   ];
 
-  return myProjects.map((el, i) => (
+  return (
+  <section className="projects">
+  {myProjects.map((el, i) => (
     <article key={i}>
       <div style={{ backgroundImage: `url(${el.image})` }}>
         <p className="desc">{el.desc}</p>
@@ -63,7 +65,8 @@ export default function Projects() {
       </div>
       <h3>{el.title}</h3>
     </article>
-  ));
-  
+  ))}
+    </section>
+  )
   
 }
