@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --main: rgb(154, 154, 154);
   --accent: rgba(0, 255, 255, 0.31);
 }
@@ -109,7 +109,7 @@ text-align: center;
 #projects div:hover p,
 #projects div:hover {
   z-index: 1;
-}
+} */
 
 .desc{
   margin: 3em;
@@ -123,7 +123,7 @@ color: blue;
 text-decoration: underline;
 }
 
-@media screen and (max-width: 340px) {
+/* @media screen and (max-width: 340px) {
   nav ul {
     justify-content: space-around;
   }
@@ -141,4 +141,4 @@ text-decoration: underline;
    {
     width: 100%;
   }
-}
+} */

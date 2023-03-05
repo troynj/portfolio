@@ -89,7 +89,7 @@ export default function Projects() {
         key={i} 
         src={el.image.src} 
         alt={el.image.alt}
-               onClick={() => {setProject(<Project title={el.title}
+               onMouseEnter={() => {setProject(<Project title={el.title}
                 repo={el.repo}
                 deploy={el.deploy}
                 src={el.image.src}
