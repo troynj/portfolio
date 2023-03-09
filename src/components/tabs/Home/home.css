@@ -1,0 +1,29 @@
+/* Snapshot section styles */
+#snapshot {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+#portrait {
+  border-radius: 20%;
+  height: 200px;
+  margin-right: 2rem;
+  width: 300px;
+}
+
+article {
+  max-width: 500px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
