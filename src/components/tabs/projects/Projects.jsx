@@ -8,9 +8,20 @@ import dailyPlanner from "./images/dailyPlanner.png"
 import quizGame from "./images/quizGame.gif"
 import weatherForecast from "./images/weatherForecast.png"
 import wordGuesser from "./images/wordGuesser.png"
+import newBeeFinancial from "./images/newBeeDeploy.gif"
 
 export default function Projects() {
   var myProjects = [
+    {
+      title: "NewBee Financial",
+      repo: "https://github.com/troynj/NewBee-Financial",
+      deploy: "https://fierce-plains-86350.herokuapp.com/",
+      image: {
+        src: newBeeFinancial,
+        alt: "screen shot of my finance app",
+      },
+      desc: "NewBee Financial is an application that educates the beginner investor in understanding key financial metrics of major public companies in the United States.",
+    },
     {
       title: "Shadowlands",
       repo: "https://github.com/troynj/shadowlands",
@@ -89,7 +100,7 @@ export default function Projects() {
     src={myProjects[0].image.src}
     alt={myProjects[0].image.alt}
     desc={myProjects[0].desc}/>)
-  return (
+  return (<>
     <section className="projects">
       {myProjects.map((el, i) => (
         <img 
@@ -104,7 +115,10 @@ export default function Projects() {
                 desc={el.desc}/>)}}
         />
       ))}
+    </section>
+      <section>
       <div className="project-details">{project}</div>
     </section>
+    </>
   );
 }
